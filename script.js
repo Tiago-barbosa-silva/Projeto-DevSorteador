@@ -12,6 +12,16 @@ function buttonClick() {
 
     const numberResult = document.querySelector(".result")
 
+    // const numbermin = document.querySelector(".number-min")
+
+    // const numbermax = document.querySelector(".number-max")
+
     numberResult.placeholder = result
+
+    if(min >= max){
+      numberResult.placeholder = "Não encontrado"
+
+      alert("O valor 'E' não pode ser MENOR q o valor 'Entre' ")
+    }
 
 }
