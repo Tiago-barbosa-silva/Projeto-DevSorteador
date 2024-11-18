@@ -132,4 +132,8 @@ button:hover {
     h1{
         text-align: center;
     }
+
+    .result::placeholder{
+        font-size: 25px;
+    }
 }
