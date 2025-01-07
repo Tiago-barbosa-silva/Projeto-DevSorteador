@@ -98,7 +98,7 @@ button:hover {
 @media screen and (max-width: 450px){
     main{
         position: absolute;
-        right: 20%;
+        right: 27%;
     }
 
     .result{
