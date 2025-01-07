@@ -9,7 +9,7 @@
 body {
     background-color: rgba(0, 0, 0, 0.932);
     min-width: 100%;
-    height: 100%;
+    height: 100vh;
     
 
 }
@@ -95,28 +95,40 @@ button:hover {
     opacity: .7;
 }
 
+@media screen and (max-width: 400px){
+    main{
+        position: absolute;
+        right: 20%;
+    }
+
+    .result{
+        width: 150px;
+    }
+}
+
 @media screen and (max-width: 900px) {
     * {
         margin: 0;
         padding: 0;
     }
 
-    body{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+ 
 
     img {
         width: 377px;
         margin: 0;
         margin-left: 8px;
+       display: block;
+       margin: 5px auto;
+
+        
     }
 
     input {
         width: 170px;
         margin-left: 8px;
         padding-top: 0;
+        
 
     }
 
@@ -127,10 +139,9 @@ button:hover {
 
     }
 
-    main {
-        position: relative;
-        left: 0;
-
+    main { 
+       position: absolute;
+       left: 28%;
     }
 
     button {
@@ -140,38 +151,37 @@ button:hover {
         padding-left: 40px;
     }
 
-    h1 {
-        text-align: center;
-    }
 
     .result::placeholder {
         font-size: 25px;
     }
 }
-@media screen and (max-width: 1400px){
+/* @media screen and (max-width: 1400px){
    main{
-    position: absolute;
-    left: 0;
-    right: 0;
+   
+   position: absolute;
+   
    }
 
    input{
-    position: relative;
-    left: 155px;
+   
+    width: 250px;
 
    }
-   button{
-    padding-left:10% ;
-   }
+   
 
    .result{
-    margin: 30px 18%  ;
+    margin: 30px auto  ;
+    width: 300px;
+
    }
-}
+} */
 
 @media screen and (max-width: 800px){
     img{
         width:250px ;
+        display: block;
+        margin: 10px auto;
         
     }
 
