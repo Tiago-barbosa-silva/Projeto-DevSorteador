@@ -19,6 +19,7 @@ function buttonClick() {
     // const numbermax = document.querySelector(".number-max")
 
      numberResult.placeholder =  `Reultado: ${result}`
+     
      numberResult.style.display = "block"
      
 
